@@ -1,4 +1,7 @@
-Run('appveyor AddMessage "test message"')
-Run('appveyor AddTest "Test Passed" -Outcome Passed -Duration 10 -Framework "Micro" -FileName "AutoItAppveyor.au3"')
-Run('appveyor AddTest "Test Failed" -Outcome Failed -Duration 10 -Framework "Micro" -FileName "AutoItAppveyor.au3"')
-Run('appveyor AddTest "Test long" -Outcome Passed -Duration 10000 -Framework "Micro" -FileName "AutoItAppveyor.au3"')
+Func appveyorAddTest($name, $outcome, $duration = 1, $filename = @ScriptName)
+    Run('appveyor AddTest "' & $name & '" -Outcome ' & $outcome & ' -FileName "' & $filename & '" -Framework "Micro"')
+EndFunc
+
+Func appveyorAddMessage($messageTitle, $category = "Information", $messageDetails = "")
+    Run('appveyor AddMessage "' & $messageTitle & '" -Category ' & $category & ' -Details "' & $messageDetails & '"')
+EndFunc
