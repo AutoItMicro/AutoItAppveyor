@@ -10,4 +10,4 @@ before_test:
   - aut2exe /in AutoItAppveyor.au3 /out AutoItAppveyor.exe /console
 
 test_script: 
-  - autoit3 /AutoIt3ExecuteScript AutoItAppveyor.au3
+  - autoit3 /AutoIt3ExecuteScript AutoItAppveyorTest.au3
