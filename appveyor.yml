@@ -8,5 +8,5 @@ build: off
 before_test:
   - aut2exe AutoItAppveyor.au3
 
-test: 
+test_script: 
   - AutoItAppveyor.exe
