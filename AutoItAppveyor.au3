@@ -1,0 +1,1 @@
+Run('appveyor AddMessage "test message"')
