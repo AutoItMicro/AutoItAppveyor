@@ -1,5 +1,5 @@
 Func appveyorAddTest($name, $outcome, $duration = 1, $filename = @ScriptName)
-    Run('appveyor AddTest "' & $name & '" -Outcome ' & $outcome & ' -FileName "' & $filename & '" -Framework "Micro"')
+    Run('appveyor AddTest "' & $name & '" -Outcome ' & $outcome & ' -Duration ' & $duration & ' -FileName "' & $filename & '" -Framework "Micro"')
 EndFunc
 
 Func appveyorAddMessage($messageTitle, $category = "Information", $messageDetails = "")

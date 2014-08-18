@@ -4,6 +4,7 @@
 #EndRegion
 
 appveyorAddTest("Test Passed","Passed")
+appveyorAddTest("Test Failed","Failed")
 appveyorAddTest("Test Long","Passed",1000000)
 appveyorAddTest("Test Skipped","Skipped")
 appveyorAddTest("Test Ignored","Ignored")
