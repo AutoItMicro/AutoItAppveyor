@@ -1,13 +1,9 @@
-version: 0.1.{build}
+version: 1.0.{build}
 
 install: 
   - cinst autoit.commandline
 
 build: off
 
-before_test:
-  - aut2exe /in AutoItAppveyor.au3 /out AutoItAppveyor.exe /console
-  - aut2exe /in AutoItAppveyorTest.au3 /out AutoItAppveyorTest.exe /console
-
 test_script: 
-  - AutoItAppveyorTest.exe
+  - autoit3 /ErrorStdOut /AutoIt3ExecuteScript AutoItAppveyorTest.au3
