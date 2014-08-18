@@ -7,4 +7,5 @@ build:
   - cmd: aut2exe AutoItAppveyorTest.au3
   - cmd: aut2exe AutoItAppveyor.au3
 
-test: off
+test: 
+  - cmd: AutoItAppveyor.exe
