@@ -6,6 +6,7 @@ install:
 build: off
 
 before_test:
+  - appveyor AddTest "before Script Test" -Outcome Passed -Duration 1
   - aut2exe /in AutoItAppveyor.au3 /out AutoItAppveyor.exe /console
 
 test_script: 
