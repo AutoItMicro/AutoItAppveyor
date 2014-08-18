@@ -1,0 +1,8 @@
+version: 0.1.{build}
+
+install: 
+  - cinst autoit.commandline
+
+build: off
+
+test: off
