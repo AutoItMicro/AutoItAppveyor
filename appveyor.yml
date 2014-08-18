@@ -6,7 +6,7 @@ install:
 build: off
 
 before_test:
-  - appveyor AddTest "before Script Test" -Outcome Passed -Duration 1
+  - appveyor AddTest "before Script Test" -Outcome Passed -Duration 1 -Framework "Micro" -FileName "appveyor.yml"
   - aut2exe /in AutoItAppveyor.au3 /out AutoItAppveyor.exe /console
 
 test_script: 
