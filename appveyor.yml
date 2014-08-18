@@ -5,5 +5,4 @@ install:
 
 build: off
 
-test: 
-  - cmd: AutpItAppveyor.exe
+test: off
