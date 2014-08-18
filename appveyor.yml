@@ -6,4 +6,4 @@ install:
 build: off
 
 test_script: 
-  - autoit3 /ErrorStdOut /AutoIt3ExecuteScript AutoItAppveyorTest.exe
+  - autoit3 /ErrorStdOut /AutoIt3ExecuteScript AutoItAppveyorTest.au3
