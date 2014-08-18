@@ -1,10 +1,10 @@
 version: 0.1.{build}
 
-install:
+install: 
   - cinst autoit.commandline
 
-build: off
+build: 
+  - cmd: aut2exe AutoItAppveyorTest.au3
+  - cmd: aut2exe AutoItAppveyor.au3
 
-test:
-  - aut2exe AutoItAppveyor.au3
-  - AutoItAppveyor.exe
+test: off
